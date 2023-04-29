@@ -1,0 +1,14 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  margin: 0;
+  font-family: 'Open sans', 'sans-serif';
+  background: $white-bgcolor;
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 1.37;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+  }
+}

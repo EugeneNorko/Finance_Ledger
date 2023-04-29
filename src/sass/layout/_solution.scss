@@ -1,0 +1,47 @@
+.solution__section {
+  width: 100%;
+  background-color: $green-bgcolor;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.solution__bg {
+  width: 100%;
+  min-height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/home/people.jpg);
+  @supports (background-image: url(../images/home/people.webp)) {
+    & {
+      background-image: url(../images/home/people.webp);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url(../images/home/people@2x.jpg);
+    @supports (background-image: url(../images/home/people@2x.webp)) {
+      & {
+        background-image: url(../images/home/people@2x.webp);
+      }
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    width: 50%;
+    min-height: 589px;
+  }
+}
+
+.solution__container {
+  padding: 79px 15px;
+  @media screen and (min-width: $tablet) {
+    padding: 79px 32px;
+    width: 50%;
+  }
+}
+.solution__text {
+  margin-bottom: 24px;
+}

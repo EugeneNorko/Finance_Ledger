@@ -1,0 +1,14 @@
+.pre-title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.37;
+
+  &--centered {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}

@@ -1,0 +1,26 @@
+.business__section {
+  padding: 56px 0 40px 0;
+  color: $secondary-text-color;
+}
+
+.business__container {
+  @media screen and (max-width: $max-mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.section-title--business {
+  @media screen and (max-width: $max-mobile) {
+    max-width: 219px;
+  }
+}
+
+.business__text {
+  margin-bottom: 31px;
+  text-align: center;
+  @media screen and (max-width: $max-mobile) {
+    max-width: 450px;
+  }
+}

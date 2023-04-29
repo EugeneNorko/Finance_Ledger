@@ -1,0 +1,40 @@
+.header {
+  padding: 22px 0 22px 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+}
+
+.header__container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list__item {
+  & + & {
+    margin-left: 12px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    & + & {
+      margin-left: 20px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    & + & {
+      margin-left: 40px;
+    }
+  }
+}
+.nav-list__link {
+  padding: 5px 0;
+}

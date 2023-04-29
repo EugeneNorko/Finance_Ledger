@@ -1,0 +1,65 @@
+.hero__section {
+  padding: 160px 0 104px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/home/showcase.jpg);
+  @supports (background-image: url(../images/home/showcase.webp)) {
+    & {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../images/home/showcase.webp);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/home/showcase@2x.jpg);
+    @supports (background-image: url(../images/home/showcase@2x.webp)) {
+      & {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url(../images/home/showcase@2x.webp);
+      }
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 378px 0 378px 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 272px 0 270px 0;
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__title {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.35;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    font-size: 55px;
+    line-height: 1.36;
+  }
+}
+
+.hero__after-title {
+  margin-bottom: 24px;
+  max-width: 360px;
+  font-size: 26px;
+  line-height: 1.23;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    max-width: 530px;
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}

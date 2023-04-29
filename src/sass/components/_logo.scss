@@ -1,0 +1,21 @@
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  line-height: 1.35;
+
+  &--green {
+    color: $green-bgcolor;
+  }
+
+  &__icon {
+    margin-right: 8px;
+    @media screen and (min-width: $tablet) {
+      margin-right: 9.5px;
+    }
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    margin-bottom: 16px;
+  }
+}
