@@ -4,12 +4,12 @@ const errorMessage = document.getElementById('emailError');
 
 form.addEventListener('submit', formHandler);
 
-function formHandler(e) {
+function formHandler(event) {
   e.preventDefault();
   if (emailInput.value === '') {
     return errorMessage.classList.add('show');
   }
-  const myForm = e.target;
+  const myForm = event.target;
   const formData = new FormData(myForm);
 
   fetch('/', {

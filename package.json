@@ -13,6 +13,7 @@
   "keywords": [],
   "author": "Yevhenii Norko",
   "dependencies": {
+    "gatsby": "^5.9.0",
     "jquery": "^3.6.4",
     "lightbox2": "^2.11.4",
     "modern-normalize": "^1.1.0"
