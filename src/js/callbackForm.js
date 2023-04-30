@@ -5,9 +5,8 @@ const errorMessage = document.getElementById('emailError');
 form.addEventListener('submit', formHandler);
 
 function formHandler(event) {
-  event.preventDefault();
   if (emailInput.value === '') {
-    console.log('empty');
+    event.preventDefault();
     return errorMessage.classList.add('show');
   }
   errorMessage.classList.remove('show');
