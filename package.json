@@ -2,7 +2,6 @@
   "name": "Finance_Ledger",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://EugeneNorko.github.io/Finance_Ledger",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /Finance_Ledger/"
@@ -13,9 +12,6 @@
   },
   "keywords": [],
   "author": "Yevhenii Norko",
-  "bugs": {
-    "url": "https://github.com/EugeneNorko/Finance_Ledger/issues"
-  },
   "dependencies": {
     "jquery": "^3.6.4",
     "lightbox2": "^2.11.4",
