@@ -9,6 +9,7 @@ function formHandler(event) {
   if (emailInput.value === '') {
     return errorMessage.classList.add('show');
   }
+  errorMessage.classList.remove('show');
   const myForm = event.target;
   const formData = new FormData(myForm);
 
@@ -19,5 +20,4 @@ function formHandler(event) {
   })
     .then(() => navigate('/thank-you/'))
     .catch(error => alert(error));
-  errorMessage.classList.remove('show');
 }
