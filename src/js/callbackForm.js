@@ -19,5 +19,5 @@ function formHandler(event) {
     body: new URLSearchParams(formData).toString(),
   })
     .then(() => navigate('/thank-you/'))
-    .catch(error => alert(error));
+    .catch(error => console.log(error));
 }
