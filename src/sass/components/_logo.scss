@@ -3,7 +3,13 @@
   align-items: center;
   font-size: 28px;
   line-height: 1.35;
-
+  transition: transform $transition-duration $timing-function,
+    text-shadow $transition-duration $timing-function;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    text-shadow: 0 0 15px white;
+  }
   &--green {
     color: $green-bgcolor;
   }

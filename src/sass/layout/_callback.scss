@@ -1,7 +1,60 @@
 .callback__section {
-  padding: 51px 0 25px 0;
-  background-color: $semiGreyColor;
+  width: 100%;
   color: $secondary-text-color;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    padding-bottom: 0;
+  }
+}
+
+.callback__bg {
+  width: 100%;
+  min-height: 220px;
+  background-color: $semiGreyColor;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/home/contact.jpg);
+  @supports (background-image: url(../images/home/contact.webp)) {
+    & {
+      background-image: url(../images/home/contact.webp);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url(../images/home/contact@2x.jpg);
+    @supports (background-image: url(../images/home/contact@2x.webp)) {
+      & {
+        background-image: url(../images/home/contact@2x.webp);
+      }
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    width: 50%;
+    min-height: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    min-height: 454px;
+  }
+}
+
+.callback__container {
+  background-color: $semiGreyColor;
+  padding: 51px 15px 25px 15px;
+  @media screen and (min-width: $tablet) {
+    padding: 32px 15px 33px 32px;
+    width: 50%;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    padding: 56px 15px 0 20px;
+  }
 }
 
 .section-title--callback {

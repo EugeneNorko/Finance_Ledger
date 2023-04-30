@@ -10,15 +10,25 @@
   }
 }
 
+.team__text {
+  margin-bottom: 63px;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
+}
 .team-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
   grid-template-rows: 1fr;
   grid-gap: 17px;
-}
-
-.team-list__item {
-  // grid-area: 1 / 1 / 2 / 4;
+  @media screen and (max-width: $max-mobile) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 
 .team-list__name {
