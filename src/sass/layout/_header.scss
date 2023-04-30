@@ -1,9 +1,22 @@
 .header {
-  padding: 22px 0 22px 0;
+  padding: 22px 0 0 0;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
   width: 100%;
+  @media screen and (min-width: $desktop) {
+    padding: 32px 0 0 0;
+  }
+
+  &.scrolled {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0 10px 0;
+    @media screen and (min-width: $tablet) {
+      padding: 10px 0 10px 0;
+    }
+  }
 }
 
 .header__container {
@@ -37,7 +50,7 @@
 }
 .nav-list__link {
   position: relative;
-  padding: 5px 5px;
+  padding: 5px 4px;
   &:after {
     content: '';
     position: absolute;
@@ -50,7 +63,7 @@
     transition: opacity $transition-duration $timing-function;
   }
   &:hover:after,
-  &:focus:after {
+  &.active:after {
     opacity: 1;
   }
 }

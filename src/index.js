@@ -1,7 +1,5 @@
-import * as lightbox from 'lightbox2';
+import './js/smoothScroll';
+import './js/headerScroll';
+import './js/setActiveNavLink';
+import './js/lightBox';
 import './js/callbackForm';
-
-lightbox.option({
-  resizeDuration: 200,
-  wrapAround: true,
-});

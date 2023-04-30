@@ -41,6 +41,10 @@
     padding: 79px 32px;
     width: 50%;
   }
+  @media screen and (min-width: $desktop) {
+    max-width: 800px;
+    margin-left: 0;
+  }
 }
 .solution__text {
   margin-bottom: 24px;

@@ -45,6 +45,9 @@
   font-size: 40px;
   line-height: 1.35;
   text-align: center;
+  @media screen and (max-width: $max-mobile) {
+    max-width: 242px;
+  }
   @media screen and (min-width: $tablet) {
     font-size: 55px;
     line-height: 1.36;
