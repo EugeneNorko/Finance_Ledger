@@ -2,14 +2,32 @@
   <div class="callback__bg"></div>
   <div class="container callback__container">
     <h2 class="section-title section-title--callback">Request Callback</h2>
-    <form action="#" title="callbackForm">
-      <label for="name">
-        <input class="form__input" id="name" type="text" />
+    <form id="callbackForm" action="#" title="callbackForm">
+      <label class="form__label" for="name">
+        <input
+          class="form__input"
+          id="name"
+          name="name"
+          type="text"
+          placeholder=" "
+        />
         <span class="form__text">Enter your name</span>
       </label>
-      <label for="email">
-        <input class="form__input" id="email" type="email" />
+      <label class="form__label" for="email">
+        <input
+          class="form__input"
+          id="email"
+          name="email"
+          type="email"
+          placeholder=" "
+        />
         <span class="form__text">Enter email*</span>
+        <span id="emailError" class="form__error">
+          <svg width="16px" height="16px">
+            <use href="./images/sprite.svg#error-icon"></use>
+          </svg>
+          This is a required field</span
+        >
       </label>
       <button class="pageButton form__button" type="submit">Send</button>
     </form>

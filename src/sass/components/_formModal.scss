@@ -1,0 +1,47 @@
+.formModal {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1f301a;
+
+  &.show {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
+}
+
+.formModal__window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  min-height: 170px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: $white-bgcolor;
+  color: $secondary-text-color;
+}
+
+.formModal__title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2c4525;
+}
+
+.formModal__text {
+  margin-bottom: 15px;
+}
+
+.formModal__link {
+  display: flex;
+  align-items: center;
+  color: #2c4525;
+}

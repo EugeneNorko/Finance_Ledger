@@ -45,3 +45,11 @@
     grid-gap: 20px;
   }
 }
+
+.business-images__item {
+  transition: opacity $transition-duration $timing-function;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
