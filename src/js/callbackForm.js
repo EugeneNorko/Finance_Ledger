@@ -20,5 +20,4 @@ function formHandler(event) {
     .then(() => navigate('/thank-you/'))
     .catch(error => alert(error));
   errorMessage.classList.remove('show');
-  form.reset();
 }
