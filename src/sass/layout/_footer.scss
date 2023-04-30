@@ -3,34 +3,3 @@
   padding: 20px 0 20px 0;
   text-align: center;
 }
-
-.footer-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 12px;
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 10px;
-  }
-}
-
-.footer-list__item {
-  & + & {
-    margin-left: 25px;
-  }
-}
-.footer__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: $primary-text-color;
-  &:hover > .footer__icon,
-  &:focus > .footer__icon {
-    fill: $green-bgcolor;
-  }
-}
-
-.footer__icon {
-  fill: $primary-text-color;
-  transition: fill $transition-duration $timing-function;
-}

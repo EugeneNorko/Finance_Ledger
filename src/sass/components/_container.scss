@@ -2,6 +2,9 @@
   padding: 0 15px 0 15px;
   margin: 0 auto;
 
+  @media screen and (max-width: 320px) {
+    width: 310px;
+  }
   @media screen and (max-width: $max-mobile) {
     min-width: 310px;
   }

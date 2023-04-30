@@ -1,6 +1,9 @@
 .business__section {
   padding: 56px 0 40px 0;
   color: $secondary-text-color;
+  @media screen and (min-width: $desktop) {
+    padding: 80px 0 80px 0;
+  }
 }
 
 .business__container {
@@ -18,9 +21,27 @@
 }
 
 .business__text {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   text-align: center;
   @media screen and (max-width: $max-mobile) {
     max-width: 450px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 36px;
+  }
+}
+
+.business-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 17px;
+  @media screen and (max-width: $max-mobile) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: repeat(auto-fit, minmax(421px, 1fr));
+    grid-gap: 20px;
   }
 }
