@@ -81,6 +81,10 @@
   border-radius: 5px;
   padding: 3px 10px;
   background-color: $white-bgcolor;
+
+  &::placeholder {
+    color: transparent;
+  }
 }
 
 .form__text {
