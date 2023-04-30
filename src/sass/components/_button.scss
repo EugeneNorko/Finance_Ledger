@@ -1,0 +1,37 @@
+.pageButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 32px;
+  transition: background-color $transition-duration $timing-function,
+    border $transition-duration $timing-function,
+    color $transition-duration $timing-function;
+  background-color: $green-bgcolor;
+  color: $primary-text-color;
+  border: 1px solid $green-bgcolor;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.37;
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.38;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $hoverGreen-bgcolor;
+    border: 1px solid $hoverGreen-bgcolor;
+  }
+
+  &--transparent {
+    border: 1px solid $primary-text-color;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      background-color: $semiGreyColor;
+      color: $green-bgcolor;
+      border: 1px solid $semiGreyColor;
+    }
+  }
+}

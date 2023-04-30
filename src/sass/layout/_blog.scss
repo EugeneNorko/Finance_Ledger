@@ -51,3 +51,10 @@
 .blog__text {
   margin-bottom: 24px;
 }
+
+.blog__button {
+  &:hover,
+  &:focus {
+    color: $blue-bgcolor;
+  }
+}
