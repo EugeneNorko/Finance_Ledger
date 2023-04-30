@@ -9,6 +9,16 @@ function formHandler(e) {
   if (emailInput.value === '') {
     return errorMessage.classList.add('show');
   }
+  const myForm = e.target;
+  const formData = new FormData(myForm);
+
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => navigate('/thank-you/'))
+    .catch(error => alert(error));
   errorMessage.classList.remove('show');
   form.reset();
 }

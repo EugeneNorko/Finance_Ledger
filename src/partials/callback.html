@@ -2,12 +2,18 @@
   <div class="callback__bg"></div>
   <div class="container callback__container">
     <h2 class="section-title section-title--callback">Request Callback</h2>
-    <form id="callbackForm" action="#" title="callbackForm">
+    <form
+      id="callbackForm"
+      action="#"
+      name="callback"
+      method="POST"
+      data-netlify="true"
+    >
       <label class="form__label" for="name">
         <input
           class="form__input"
           id="name"
-          name="name"
+          name="form-name"
           type="text"
           placeholder=" "
         />
@@ -17,7 +23,7 @@
         <input
           class="form__input"
           id="email"
-          name="email"
+          name="form-email"
           type="email"
           placeholder=" "
         />
