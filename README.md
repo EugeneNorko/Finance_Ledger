@@ -21,7 +21,7 @@ Some sections contain gallery and simple cards. You can interact with them! Just
 place your mouse under the block and see magic. Also website has dynamic
 navigation, so it is very convenient!
 
-For develop I have used those technologies:
+For develop I have used those technologies 💻:
 
 <ul>
 <li>HTML</li>
@@ -35,11 +35,11 @@ For develop I have used those technologies:
 </ul>
 
 <strong>Also i have checked it on https://validator.w3.org/ and there are no
-errors!</strong>
+errors!</strong> 🙂
 
 ![validate](https://user-images.githubusercontent.com/92314963/235370821-07107090-3e72-478a-acd7-1bda8514abb4.png)
 
 <strong>And i checked it with Lighthouse and that works good but can will be
-better!</strong>
+better!</strong> 🙂
 
 ![lighthouse](https://user-images.githubusercontent.com/92314963/235371023-00a79aeb-59c8-4a6a-9d36-d816a27b6402.png)

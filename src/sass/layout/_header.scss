@@ -62,8 +62,13 @@
     background-color: $green-bgcolor;
     transition: opacity $transition-duration $timing-function;
   }
-  &:hover:after,
   &.active:after {
     opacity: 1;
+  }
+  @media screen and (min-width: $tablet) {
+    &:hover:after,
+    &.active:after {
+      opacity: 1;
+    }
   }
 }

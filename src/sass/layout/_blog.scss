@@ -4,6 +4,7 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
   }
 }
 
@@ -34,6 +35,9 @@
     width: 50%;
     min-height: 493px;
   }
+  @media screen and (min-width: $desktop) {
+    max-width: 1000px;
+  }
 }
 
 .blog__container {
@@ -45,8 +49,8 @@
   }
   @media screen and (min-width: $desktop) {
     padding: 80px 25px 80px 15px;
-    max-width: 800px;
-    margin-right: 0;
+    max-width: 1000px;
+    margin: 0 0;
   }
 }
 .blog__text {

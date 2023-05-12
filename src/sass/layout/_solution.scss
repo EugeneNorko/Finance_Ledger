@@ -3,6 +3,10 @@
   background-color: $green-bgcolor;
   @media screen and (min-width: $tablet) {
     display: flex;
+    justify-content: end;
+  }
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
   }
 }
 
@@ -33,17 +37,21 @@
     width: 50%;
     min-height: 589px;
   }
+  @media screen and (min-width: $desktop) {
+    max-width: 1000px;
+  }
 }
 
 .solution__container {
   padding: 79px 15px;
+
   @media screen and (min-width: $tablet) {
     padding: 79px 32px;
     width: 50%;
   }
   @media screen and (min-width: $desktop) {
-    max-width: 800px;
-    margin-left: 0;
+    max-width: 1000px;
+    margin: 0 0;
   }
 }
 .solution__text {
