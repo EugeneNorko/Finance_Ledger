@@ -48,7 +48,20 @@
     pointer-events: all;
   }
 }
-
+.team-list__image {
+  @media screen and (max-width: $max-mobile) {
+    min-width: 280px;
+    min-height: 186px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 223px;
+    min-height: 148px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 420px;
+    min-height: 287px;
+  }
+}
 .team-list__overlay {
   position: absolute;
   display: grid;

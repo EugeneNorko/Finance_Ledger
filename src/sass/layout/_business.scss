@@ -40,6 +40,7 @@
     max-width: 320px;
     margin: 0 auto;
   }
+
   @media screen and (min-width: $desktop) {
     grid-template-columns: repeat(auto-fit, minmax(421px, 1fr));
     grid-gap: 20px;
@@ -58,4 +59,16 @@
 }
 .business-images__image {
   pointer-events: none;
+  @media screen and (max-width: $max-mobile) {
+    min-width: 280px;
+    min-height: 186px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 223px;
+    min-height: 148px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 420px;
+    min-height: 282px;
+  }
 }
