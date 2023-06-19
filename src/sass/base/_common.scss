@@ -11,4 +11,10 @@ body {
   @media screen and (min-width: $tablet) {
     font-size: 18px;
   }
+
+  &.modal-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
 }

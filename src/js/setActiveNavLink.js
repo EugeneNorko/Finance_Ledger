@@ -1,6 +1,7 @@
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.scroll');
-window.addEventListener('scroll', function () {
+
+function setActiveNavLink() {
   const currentScrollPosition = window.pageYOffset;
   sections.forEach(function (section) {
     const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
@@ -18,4 +19,6 @@ window.addEventListener('scroll', function () {
       });
     }
   });
-});
+}
+setActiveNavLink();
+window.addEventListener('scroll', setActiveNavLink);

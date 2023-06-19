@@ -8,13 +8,13 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
       sapiente!
     </p>
-    <div class="business-images">
+    <div class="business-images" id="gallery-container">
       <a
         href="./images/cases/cases1@2x.jpg"
         class="business-images__item"
         data-title="Lorem ipsum dolor sit amet consectetur."
         data-lightbox="image-1"
-        ><picture>
+        ><picture class="business-images__picture">
           <source
             srcset="
               ./images/cases/cases1@2x.webp 2x,
@@ -30,6 +30,7 @@
             type="image/jpeg"
           />
           <img
+            class="business-images__image"
             src="./images/cases/cases1.jpg"
             alt="photo of our work"
             loading="lazy"
@@ -168,3 +169,9 @@
     </div>
   </div>
 </section>
+<!-- <source
+            media="(max-width:767px)"
+            width="320"
+            height="480"
+            srcset="img_pink_flowers_small.jpg"
+          /> -->
